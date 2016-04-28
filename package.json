@@ -1,7 +1,7 @@
 {
   "name": "magnet-vorpal",
   "version": "0.1.0",
-  "description": "Readme",
+  "description": "Magnet's module for Vorpal",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
