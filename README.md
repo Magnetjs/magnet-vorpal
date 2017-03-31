@@ -1,6 +1,8 @@
 magnet-vorpal
 ===========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Magnetjs/magnet-vorpal.svg)](https://greenkeeper.io/)
+
 ### Usage
 Basic
 command.js
