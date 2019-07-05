@@ -9,7 +9,9 @@
     "test": "babel-node tests/index.js | tap-spec",
     "watch": "nodemon --ignore dist --exec \"babel src --out-dir dist --source-maps\"",
     "watch-test": "nodemon --delay 0.5 --ignore src --exec babel-node tests/index.js | tap-spec",
-    "watch-all": "concurrently \"npm run watch\" \"npm run watch-test\""
+    "watch-all": "concurrently \"npm run watch\" \"npm run watch-test\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "magnet",
@@ -27,7 +29,8 @@
     "lodash": "^4.11.1",
     "magnet-core": "^1.1.0",
     "require-all": "^2.0.0",
-    "vorpal": "^1.10.10"
+    "vorpal": "^1.10.10",
+    "snyk": "^1.192.0"
   },
   "devDependencies": {
     "ava": "^0.14.0",
@@ -59,5 +62,6 @@
   },
   "eslintConfig": {
     "extends": "eslint-config-airbnb"
-  }
+  },
+  "snyk": true
 }
